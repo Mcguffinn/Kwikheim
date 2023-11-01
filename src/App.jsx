@@ -7,6 +7,7 @@ import { Smoke } from './models/Smoke'
 import { Fire } from './models/Fire'
 import { Forest } from './models/Forest'
 import { useEffect, useRef } from 'react';
+import ServerStats from './components/ServerStats'
 
 function App() {
 
@@ -81,7 +82,7 @@ function App() {
           </div>
           <div className="frame">
             <div className="div-wrapper">
-              <p className="text-wrapper">Kwikheim</p>
+              <ServerStats/>
             </div>
           </div>
         </Scroll>
