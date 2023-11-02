@@ -103,14 +103,10 @@ p {
   font-family: "Underdog-Regular", "Roboto Slab";
   font-size: 78px;
   font-weight: 400;
-  height: 200px;
-  left: 470px;
   letter-spacing: 0;
   line-height: normal;
-  position: absolute;
   text-align: center;
-  top: 339px;
-  width: 980px;
+  padding: 4em 2rem;
 }
 
 .frame .div-hero {

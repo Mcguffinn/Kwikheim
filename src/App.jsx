@@ -66,12 +66,13 @@ function App() {
             </div>
           </div>
           <div className="frame">
-            <div className="div-hero">
+            {/* <div className="div-hero">
               <img src={logo} className="div-logo" alt="logo" />
               <p className="text-hero">Kwikheim</p>
               <button><p className="button-wrapper">ᛃᛟᛁᚾ</p></button>
-            </div>
+            </div> */}
           </div>
+              {/* <ServerStats/> */}
         </Scroll>
       </ScrollControls>
     </>
