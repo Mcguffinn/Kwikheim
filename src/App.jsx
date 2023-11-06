@@ -39,10 +39,10 @@ function App() {
           
         </Float>
         <Float
-          speed={0.4} // Animation speed, defaults to 1
-          rotationIntensity={0.4} // XYZ rotation intensity, defaults to 1
-          floatIntensity={0.1} // Up/down float intensity, works like a multiplier with floatingRange,defaults to 1
-          floatingRange={[1, 1]} // Range of y-axis values the object will float within, defaults to [-0.1,0.1]
+          speed={0.4} 
+          rotationIntensity={0.4} 
+          floatIntensity={0.1} 
+          floatingRange={[1, 1]} 
         >
           <Fire scale={3} position={[0,-9,-4.5]}/>
           <Forest scale={1} position={[0,-10,-6] } rotation={[0, 60, 0]}/>
@@ -66,13 +66,14 @@ function App() {
             </div>
           </div>
           <div className="frame">
-            {/* <div className="div-hero">
+            <div className="div-hero">
+              
               <img src={logo} className="div-logo" alt="logo" />
-              <p className="text-hero">Kwikheim</p>
-              <button><p className="button-wrapper">ᛃᛟᛁᚾ</p></button>
-            </div> */}
+              <p className="button-wrapper"><ServerStats/></p>
+              {/* <button><p className="button-wrapper">ᛃᛟᛁᚾ</p></button> */}
+            </div>
           </div>
-              {/* <ServerStats/> */}
+              
         </Scroll>
       </ScrollControls>
     </>

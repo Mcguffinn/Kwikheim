@@ -152,20 +152,22 @@ p {
   font-family: "Underdog-Regular", Helvetica;
   font-size: 98px;
   font-weight: 400;
-  left: 750px;
+  /* left: 11.5em; */
+  padding: 1em 11.5em;
   letter-spacing: 0;
   line-height: normal;
   position: absolute;
-  top: 700px;
-  width: 980px;
-}
-
-.button-wrapper {
+  top: 600px;
+  width: 100vh;
   opacity: 0.6;
   -webkit-transition: opacity 0.2s ease-in-out 0s;
   -moz-transition: opacity 0.2s ease-in-out 0s;
   transition: opacity 0.2s ease-in-out 0s;
 }
+
+/* .button-wrapper {
+  
+} */
 
 .button-wrapper:hover {
   color: rgb(228, 73, 2);
