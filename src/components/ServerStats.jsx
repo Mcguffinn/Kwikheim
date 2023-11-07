@@ -15,6 +15,7 @@ const ServerStats = () => {
         axios.get(`https://api.steampowered.com/ISteamApps/GetServersAtAddress/v1/?&addr=${serverIp}`)
         .then((response) => {
             setServerInfo(response.data.response);
+            console.log(serverInfo?.servers[0])
         })
         .catch((error) => {
             console.error('Failed to fetch Valheim server status:', setError(error));
@@ -23,7 +24,7 @@ const ServerStats = () => {
 
     useEffect(() => {
         throttleApiCall()
-        // console.log(serverInfo?.servers[0])
+        
     }, []);
     
     const connectToServer = () => {
