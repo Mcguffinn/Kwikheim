@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { throttle } from 'lodash';
 
+
 const ServerStats = () => {
     const [serverInfo, setServerInfo] = useState({})
     const [error, setError] = useState(null)
@@ -28,8 +29,8 @@ const ServerStats = () => {
     const connectToServer = () => {
         if ( serverInfo.success && serverInfo.servers.length > 0) {
             const gameServer = serverInfo.servers[0]
-            const serverAddress = `${gameServer.addr}:${gameServer.gameport}`
-            window.open(serverAddress, '_blank')
+            const serverAddress = `steam://rungameid/892970// ${serverIp}:${gameServer.gameport}`
+            window.open(serverAddress, `_blank`)
         }
     }
 
@@ -38,7 +39,7 @@ const ServerStats = () => {
         <>
             {error && <p>{error}</p>}
             {serverInfo.servers != null ?  (
-                <button onClick={connectToServer}>{serverInfo.servers[0].addr ? 'ᛃᛟᛁᚾ': 'public'}</button>
+                <button onClick={connectToServer}>{serverInfo.servers[0].addr ? <p className='hero-text'>ᛃᛟᛁᚾ</p>: 'public'}</button>
             ) :  <div>Text</div> } 
             {/* {serverInfo.servers[0].addr} */}
            
