@@ -132,22 +132,7 @@ p {
   position: relative;
 }
 
-.hero-text{
-  color: #ffffff;
-  
-  font-size: 90px;
-  font-weight: 400;
-  height: 200px;
-  left: 470px;
-  letter-spacing: 0;
-  line-height: normal;
-  position: absolute;
-  text-align: center;
-  top: 339px;
-  width: 980px;
-}
-
-.button-wrapper{
+.button-wrapper .hero-text{
   color: #ffffff;
   font-family: "Underdog-Regular", Helvetica;
   font-size: 98px;
@@ -165,17 +150,22 @@ p {
   transition: opacity 0.2s ease-in-out 0s;
 }
 
-/* .button-wrapper {
-  
-} */
+.button-wrapper {
+  content: "join";
+}
 
-.button-wrapper:hover {
+.button-wrapper .hero-text:hover {
   color: rgb(228, 73, 2);
   scale:120%;
   opacity: 1;
+  content: "join";
 }
 
-.button-wrapper:before {
+/* .button-wrapper:after{
+  content: "Join";
+} */
+
+.button-wrapper .hero-text:before {
   z-index: 10;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
@@ -185,7 +175,7 @@ p {
   transition: all 0.2s ease-in-out 0s;
 }
 
-.button-wrapper:hover:before {
+.button-wrapper .hero-text:hover:before {
   -webkit-transform: scaleX(1);
   -moz-transform: scaleX(1);
   transform: scaleX(1);
