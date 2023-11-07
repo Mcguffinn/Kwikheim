@@ -4,8 +4,8 @@ html,
 body,
 #root
 {
-    background: rgb(36,23,74);
-    background: radial-gradient(circle, rgba(36,23,74,0.406582701439951) 0%, rgba(1,0,5,1) 100%);
+    /* background: rgb(36,23,74); */
+    /* background: radial-gradient(circle, rgba(36,23,74,0.406582701439951) 0%, rgba(1,0,5,1) 100%); */
     top: 0;
     left: 0;
     width: 100%;
@@ -84,7 +84,6 @@ p {
 }
 
 .frame {
-  /* background-color: #09070d; */
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -137,7 +136,6 @@ p {
   font-family: "Underdog-Regular", Helvetica;
   font-size: 98px;
   font-weight: 400;
-  /* left: 11.5em; */
   padding: 1em 11.5em;
   letter-spacing: 0;
   line-height: normal;
@@ -150,20 +148,12 @@ p {
   transition: opacity 0.2s ease-in-out 0s;
 }
 
-.button-wrapper {
-  content: "join";
-}
 
 .button-wrapper .hero-text:hover {
   color: rgb(228, 73, 2);
   scale:120%;
   opacity: 1;
-  content: "join";
 }
-
-/* .button-wrapper:after{
-  content: "Join";
-} */
 
 .button-wrapper .hero-text:before {
   z-index: 10;

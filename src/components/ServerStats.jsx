@@ -17,8 +17,8 @@ const ServerStats = () => {
             setServerInfo(response.data.response);
             console.log(serverInfo?.servers[0])
         })
-        .catch((error) => {
-            console.error('Failed to fetch Valheim server status:', setError(error));
+        .catch((err) => {
+            console.error('Failed to fetch Valheim server status:', setError(err));
         });
     }, 3000)
 
@@ -38,7 +38,7 @@ const ServerStats = () => {
     
     return (
         <>
-            {error && <p>{error}</p>}
+            {/* {error && <p>{error}</p>} */}
             {serverInfo.servers != null ?  (
                 <button onClick={connectToServer}>{serverInfo.servers[0].addr ? <p className='hero-text'>ᛃᛟᛁᚾ</p>: 'public'}</button>
             ) :  <div>Text</div> } 
